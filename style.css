@@ -29,7 +29,16 @@ img {
 }
 
 
+body {
+  -webkit-transition: all 5s;
+  -webkit-filter: sepia(100%);
+}
+
 @media (min-width: 700px) {
+    body {
+      -webkit-filter: none;
+    }
+
     .h--nav-button {
         display: none;
     }
@@ -98,3 +107,5 @@ img {
     box-sizing: border-box;
     padding: 1em;
 }
+
+
