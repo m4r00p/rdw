@@ -19,9 +19,15 @@ img {
     margin: 0;
 }
 
-.h--hero-heading {
+.h--section--hero hgroup {
     clear: both;
 }
+
+.h--section--hero {
+    text-align: center;
+    padding: 1em;
+}
+
 
 @media (min-width: 700px) {
     .h--nav-button {
@@ -42,5 +48,53 @@ img {
         float: left;
     }
 
+    .h--section--hero {
+        text-align: left;
+        overflow: hidden;
+        clear: both;
+    }
 
+    .h--section--hero hgroup {
+        float: left;
+        width: 50%;
+    }
+
+    .h--section--hero .hero-content {
+        float: right;
+        width: 45%;
+    }
+}
+
+
+/* GRID */
+
+.grid-wrapper { overflow: hidden; clear: both; }
+
+
+.m-one-whole { width: 100%; }
+.m-two-thirds { width: 66.66%; }
+.m-one-half { width: 50%; }
+.m-one-third { width: 33.33%; }
+.m-one-quarter { width: 25%; }
+
+@media (min-width: 600px) {
+    .t-one-whole { width: 100%; }
+    .t-two-thirds { width: 66.66%; }
+    .t-one-half { width: 50%; }
+    .t-one-third { width: 33.33%; }
+    .t-one-quarter { width: 25%; }
+}
+
+@media (min-width: 900px) {
+.d-one-whole { width: 100%; }
+.d-two-thirds { width: 66.66%; }
+.d-one-half { width: 50%; }
+.d-one-third { width: 33.33%; }
+.d-one-quarter { width: 25%; }
+}
+
+.grid {
+    float: left;
+    box-sizing: border-box;
+    padding: 1em;
 }
