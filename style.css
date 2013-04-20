@@ -157,3 +157,15 @@ body {
     float: left;
     width: 33%;
 }
+
+.table-wrapper {
+    overflow: scroll;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    table { display: block; overflow: hidden; }
+    thead, tbody { display: block; }
+    th, td { display: block; height: 6em;}
+    tr { float: left; width: 33%;}
+}
